@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Fleet & Logistics Management Platform
 
-# Run and deploy your AI Studio app
+A production-ready Fleet & Logistics Management Platform built to streamline end-to-end transportation operations. The system provides intelligent booking management, automated driver scheduling, real-time fleet tracking, operational analytics, and invoice generation to help logistics teams improve efficiency and make data-driven decisions.
 
-This contains everything you need to run your app locally.
+## Key Features
 
-View your app in AI Studio: https://ai.studio/apps/8758bf83-4a05-41bd-abef-b37f9a9af77a
+* Interactive operational dashboard with KPI metrics, fleet performance, driver utilization, and trip analytics
+* Real-time vehicle tracking with map integration and historical trip visualization
+* Booking management with complete passenger, pickup/drop, and trip details
+* Automated driver and vehicle scheduling with conflict detection
+* Supplier, driver, and vehicle assignment for every booking
+* Professional passenger details page inspired by enterprise travel management systems
+* Dynamic pricing engine supporting per-kilometer, hourly, extra KM, extra hours, tolls, parking, taxes, and discounts
+* Automated invoice generation with company branding and downloadable PDF invoices
+* Fleet management including vehicle availability, maintenance, insurance, permits, and service history
+* Advanced reporting with customizable filters and one-click Excel, CSV, and PDF exports
+* Interactive charts, historical trend analysis, and business intelligence dashboards
+* Role-based access control for Admin, Operations, Billing, Dispatch, Fleet Managers, and other users
+* Secure REST APIs, audit logs, authentication, validation, and production-grade architecture
 
-## Run Locally
+## Use Cases
 
-**Prerequisites:**  Node.js
+* Corporate Employee Transportation
+* Travel & Fleet Management Companies
+* Cab Aggregators
+* Logistics Operations
+* Airport Transfer Services
+* Chauffeur & Executive Transport Providers
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This platform centralizes booking, fleet operations, driver scheduling, billing, reporting, and analytics into a single scalable system, enabling organizations to optimize resources, reduce manual effort, and improve operational efficiency.
