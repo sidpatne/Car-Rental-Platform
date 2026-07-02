@@ -42,12 +42,12 @@ import {
 
 // Firebase Config derived from firebase-applet-config.json
 const firebaseConfig = {
-  apiKey: "AIzaSyCuoQUA4YRBhiF5sSFHdffw3fj33rIEg1A",
-  authDomain: "gen-lang-client-0367504386.firebaseapp.com",
-  projectId: "gen-lang-client-0367504386",
-  storageBucket: "gen-lang-client-0367504386.firebasestorage.app",
-  messagingSenderId: "465153050481",
-  appId: "1:465153050481:web:7e8e7bba5e04190b7998d0"
+  apiKey: "**********",
+  authDomain: "*****************",
+  projectId: "********************",
+  storageBucket: "*************************",
+  messagingSenderId: "****************",
+  appId: "**************************"
 };
 
 const app = initializeApp(firebaseConfig);
