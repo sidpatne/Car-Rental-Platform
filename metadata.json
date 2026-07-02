@@ -1,0 +1,6 @@
+{
+  "name": "Fleet & Travel Logistics Platform",
+  "description": "Enterprise-grade logistics management platform for booking, driver scheduling, fleet tracking, and automated invoicing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

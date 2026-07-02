@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --color-indigo-50: #f0f7ff;
+  --color-indigo-100: #e0f2fe;
+  --color-indigo-200: #bae6fd;
+  --color-indigo-300: #7dd3fc;
+  --color-indigo-400: #38bdf8;
+  --color-indigo-500: #0ea5e9;
+  --color-indigo-600: #2563eb;
+  --color-indigo-700: #1d4ed8;
+  --color-indigo-800: #1e40af;
+  --color-indigo-900: #1e3a8a;
+  --color-indigo-950: #172554;
+}
+
+/* Base custom theme overrides */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  background-color: #f1f5f9 !important; /* High density slate-100 background */
+}
+
+/* Compact global tables for High Density presentation */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr th,
+table th {
+  padding: 6px 10px !important;
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #64748b !important;
+  text-align: left;
+  background: #f8fafc !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  font-weight: 600 !important;
+}
+
+tbody tr td,
+table td {
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+}
+
+/* High density cards / elements list */
+.card-dense {
+  background: #ffffff;
+  padding: 12px 14px !important;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Chipped layout elements for maximum vertical density */
+.status-chip,
+span[class*="bg-emerald-50"],
+span[class*="bg-indigo-50"],
+span[class*="bg-rose-50"],
+span[class*="bg-sky-50"],
+span[class*="bg-amber-50"],
+span[class*="bg-teal-50"],
+span[class*="bg-slate-50"] {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  padding: 2px 8px !important;
+  border-radius: 12px !important;
+}
+
+/* Main Sidebar navigation panel styling */
+aside {
+  background-color: #0f172a !important; /* Crisp template Slate-900 background */
+  border-right: 1px solid #1e293b !important;
+}
+
+/* Sidebar navigation links matching active border-left pattern */
+aside nav button,
+.sidebar-link {
+  display: flex !important;
+  align-items: center !important;
+  padding: 10px 16px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #94a3b8 !important;
+  background: transparent !important;
+  border-left: 3px solid transparent !important;
+  border-radius: 0px !important;
+  transition: all 0.2s !important;
+}
+
+aside nav button:hover,
+.sidebar-link:hover {
+  background-color: #1e293b !important; /* bg-slate-800 */
+  color: #ffffff !important;
+}
+
+/* Sidebar Active Link Style Overrides */
+aside nav button.bg-indigo-600,
+aside nav button[class*="bg-indigo-600"],
+aside nav button[class*="text-white"],
+.sidebar-link.active {
+  background: #1e293b !important; /* slate active background */
+  color: #ffffff !important;
+  border-left: 3px solid #3b82f6 !important; /* premium brand blue border */
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+/* Custom telemetry map dot */
+.map-dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}

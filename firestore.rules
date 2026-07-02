@@ -1,0 +1,74 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global validation helpers
+    function isValidId(id) {
+      return id != null && id != "" && id.size() < 128;
+    }
+
+    match /test/{testId} {
+      allow read, write: if true;
+    }
+
+    match /bookings/{bookingId} {
+      allow get: if isValidId(bookingId);
+      allow list: if true;
+      allow write: if isValidId(bookingId);
+    }
+
+    match /drivers/{driverId} {
+      allow get: if isValidId(driverId);
+      allow list: if true;
+      allow write: if isValidId(driverId);
+    }
+
+    match /vehicles/{vehicleId} {
+      allow get: if isValidId(vehicleId);
+      allow list: if true;
+      allow write: if isValidId(vehicleId);
+    }
+
+    match /suppliers/{supplierId} {
+      allow get: if isValidId(supplierId);
+      allow list: if true;
+      allow write: if isValidId(supplierId);
+    }
+
+    match /companies/{companyId} {
+      allow get: if isValidId(companyId);
+      allow list: if true;
+      allow write: if isValidId(companyId);
+    }
+
+    match /pricingRules/{pricingRuleId} {
+      allow get: if isValidId(pricingRuleId);
+      allow list: if true;
+      allow write: if isValidId(pricingRuleId);
+    }
+
+    match /invoices/{invoiceId} {
+      allow get: if isValidId(invoiceId);
+      allow list: if true;
+      allow write: if isValidId(invoiceId);
+    }
+
+    match /auditLogs/{auditLogId} {
+      allow get: if isValidId(auditLogId);
+      allow list: if true;
+      allow write: if isValidId(auditLogId);
+    }
+
+    match /employees/{employeeId} {
+      allow get: if isValidId(employeeId);
+      allow list: if true;
+      allow write: if isValidId(employeeId);
+    }
+
+    match /rolePermissions/{roleId} {
+      allow get: if isValidId(roleId);
+      allow list: if true;
+      allow write: if isValidId(roleId);
+    }
+  }
+}
